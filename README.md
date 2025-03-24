@@ -76,8 +76,9 @@ Nota: Utilizar um diagrama de conexão para melhor compreensão.
 DHT dht(DHTPIN, DHTTYPE);
 MAX30102 sensor;
 
-void setup() {
-  Serial.begin(115200);
+void setup() {  
+
+Serial.begin(115200);
   dht.begin();
   sensor.begin();
 }
