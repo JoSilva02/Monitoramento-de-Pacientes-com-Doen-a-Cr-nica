@@ -1,1 +1,1 @@
-# Monitoramento-de-Pacientes-com-Doen-a-Cr-nica
+# Monitoramento de Pacientes com Doença Crônica
