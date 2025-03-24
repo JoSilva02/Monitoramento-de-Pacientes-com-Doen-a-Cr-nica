@@ -1,76 +1,65 @@
 # Monitoramento de Pacientes com Doença Crônica
 
 Descrição:
-Neste tutorial, vamos desenvolver um sistema de monitoramento de sinais vitais para pacientes com doenças crônicas, utilizando um ESP32 e sensores biomédicos para medição de temperatura e frequência cardíaca. O sistema enviará os dados coletados para um servidor na nuvem, permitindo o acompanhamento remoto por profissionais de saúde e familiares.
+* Neste tutorial, vamos desenvolver um sistema de monitoramento de sinais vitais para pacientes com doenças crônicas, utilizando um ESP32 e sensores biomédicos para medição de temperatura e frequência cardíaca. O sistema enviará os dados coletados para um servidor na nuvem, permitindo o acompanhamento remoto por profissionais de saúde e familiares.
 
-Índice
+## Índice
 
-Introdução
+1. Introdução
 
-Requisitos
+2. Requisitos
 
-Configuração do Ambiente
+3. Configuração do Ambiente
 
-Montagem do Circuito
+4. Montagem do Circuito
 
-Programação
+5. Programação
 
-Teste e Validação
+6. Teste e Validação
 
-Expansões e Melhorias
+7. Expansões e Melhorias
 
-Referências
+8. Referências
 
-Introdução
+# Introdução
 
-Pacientes com doenças crônicas, como hipertensão e diabetes, precisam de monitoramento contínuo para evitar complicações. Este projeto propõe um sistema de monitoramento IoT que permite a coleta de dados vitais e o envio dessas informações para a nuvem, possibilitando um acompanhamento remoto eficiente.
+* Pacientes com doenças crônicas, como hipertensão e diabetes, precisam de monitoramento contínuo para evitar complicações. Este projeto propõe um sistema de monitoramento IoT que permite a coleta de dados vitais e o envio dessas informações para a nuvem, possibilitando um acompanhamento remoto eficiente.
 
-Requisitos
+# Requisitos
 
-Hardware
+## Hardware
 
-Placa: ESP32
+* Placa: ESP32
+* Sensores: MAX30102 (oxímetro e frequência cardíaca), DHT11 (temperatura e umidade)
+* Atuadores: LED de alerta, buzzer
+* Outros componentes: Jumpers, resistores, protoboard
 
-Sensores: MAX30102 (oxímetro e frequência cardíaca), DHT11 (temperatura e umidade)
+## Software
+* Linguagem: C++ para ESP32
+* IDE: Arduino IDE
 
-Atuadores: LED de alerta, buzzer
+* Bibliotecas: Wire.h, Adafruit_Sensor.h, DHT.h, MAX30102.h
 
-Outros componentes: Jumpers, resistores, protoboard
+# Configuração do Ambiente
 
-Software
+## Passo 1: Instalação do Software
 
-Linguagem: C++ para ESP32
-
-IDE: Arduino IDE
-
-Bibliotecas: Wire.h, Adafruit_Sensor.h, DHT.h, MAX30102.h
-
-Configuração do Ambiente
-
-Passo 1: Instalação do Software
-
-Instalar Arduino IDE e configurar a placa ESP32.
-
-Adicionar bibliotecas necessárias na Arduino IDE:
+* Instalar Arduino IDE e configurar a placa ESP32.
+* Adicionar bibliotecas necessárias na Arduino IDE:
 
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <MAX30102.h>
 
-Passo 2: Configuração da Placa ESP32
+## Passo 2: Configuração da Placa ESP32
 
-Conectar a placa ao computador e selecionar a porta correta.
-
-Carregar um código de teste para verificar a comunicação.
-
-Montagem do Circuito
-
-MAX30102: Conectar os pinos SDA e SCL ao ESP32.
-
-DHT11: Conectar ao pino digital definido no código.
-
-LED e Buzzer: Conectar aos pinos GPIO apropriados.
+* Conectar a placa ao computador e selecionar a porta correta.
+* Carregar um código de teste para verificar a comunicação.
+* Montagem do Circuito
+* MAX30102: Conectar os pinos SDA e SCL ao ESP32.
+* DHT11: Conectar ao pino digital definido no código.
+* LED e Buzzer: Conectar aos pinos GPIO apropriados.
 
 Nota: Utilizar um diagrama de conexão para melhor compreensão.
 
