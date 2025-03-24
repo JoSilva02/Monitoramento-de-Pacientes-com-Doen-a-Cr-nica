@@ -67,6 +67,8 @@ Nota: Utilizar um diagrama de conexão para melhor compreensão.
 
 ## Passo 1: Configuração dos Sensores
 
+![image](https://github.com/user-attachments/assets/2e269758-2ec5-45e2-aede-f757e19e0dd3)
+
 #include <Wire.h>
 #include "MAX30102.h"
 #include <DHT.h>
