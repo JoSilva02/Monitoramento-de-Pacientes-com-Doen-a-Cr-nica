@@ -77,18 +77,17 @@ DHT dht(DHTPIN, DHTTYPE);
 MAX30102 sensor;
 
 void setup() {  
-
-Serial.begin(115200);
-  dht.begin();
-  sensor.begin();
+    Serial.begin(115200);
+    dht.begin();
+    sensor.begin();
 }
 
 void loop() {
-  float temperatura = dht.readTemperature();
-  int batimentos = sensor.getHeartRate();
-  Serial.print("Temp: "); Serial.print(temperatura);
-  Serial.print(" BPM: "); Serial.println(batimentos);
-  delay(2000);
+    float temperatura = dht.readTemperature();
+    int batimentos = sensor.getHeartRate();
+    Serial.print("Temp: "); Serial.print(temperatura);
+    Serial.print(" BPM: "); Serial.println(batimentos);
+    delay(2000);
 }
 
 ## Passo 2: Envio dos Dados para a Nuvem
