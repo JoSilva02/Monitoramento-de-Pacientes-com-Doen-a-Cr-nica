@@ -63,9 +63,9 @@ Descrição:
 
 Nota: Utilizar um diagrama de conexão para melhor compreensão.
 
-Programação
+# Programação
 
-Passo 1: Configuração dos Sensores
+## Passo 1: Configuração dos Sensores
 
 #include <Wire.h>
 #include "MAX30102.h"
@@ -90,31 +90,22 @@ void loop() {
   delay(2000);
 }
 
-Passo 2: Envio dos Dados para a Nuvem
+## Passo 2: Envio dos Dados para a Nuvem
 
-Implementar conexão Wi-Fi e envio via MQTT/Firebase.
+* Implementar conexão Wi-Fi e envio via MQTT/Firebase.
 
-Teste e Validação
+# Teste e Validação
+* Verificar sensores com leitura via Serial Monitor.
+* Testar alertas acionando LED/buzzer conforme limites definidos.
+* Validar envio para a nuvem acessando os dados remotamente.
 
-Verificar sensores com leitura via Serial Monitor.
+# Expansões e Melhorias
+* Criar um dashboard web para monitoramento remoto.
+* Implementar notificação via app ou SMS.
+* Adicionar outros sensores, como pressão arterial.
 
-Testar alertas acionando LED/buzzer conforme limites definidos.
-
-Validar envio para a nuvem acessando os dados remotamente.
-
-Expansões e Melhorias
-
-Criar um dashboard web para monitoramento remoto.
-
-Implementar notificação via app ou SMS.
-
-Adicionar outros sensores, como pressão arterial.
-
-Referências
-
-Documentação da biblioteca Adafruit_Sensor
-
-Guia de configuração do ESP32 no Arduino IDE
-
-Introdução ao protocolo MQTT para IoT
+# Referências
+* Documentação da biblioteca Adafruit_Sensor
+* Guia de configuração do ESP32 no Arduino IDE
+* Introdução ao protocolo MQTT para IoT
 
