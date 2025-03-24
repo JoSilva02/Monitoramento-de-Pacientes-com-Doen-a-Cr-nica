@@ -71,7 +71,20 @@ Nota: Utilizar um diagrama de conexão para melhor compreensão.
 
 ## Passo 2: Envio dos Dados para a Nuvem
 
+Para enviar os dados para a nuvem, utilizaremos o protocolo MQTT  o Firebase como plataforma de armazenamento.
+
 * Implementar conexão Wi-Fi e envio via MQTT/Firebase.
+
+![image](https://github.com/user-attachments/assets/0abdac3a-4731-4a54-a5a1-77468ccdab49)
+
+* 1ª caso, envio dos Dados para Firebase.
+
+![image](https://github.com/user-attachments/assets/584a2807-e0e7-48ec-8766-d19f023d2935)
+
+* 2ª caso, envio via MQTT.
+  
+![image](https://github.com/user-attachments/assets/04ab94d1-df31-4acf-8475-cb30fe9d43d4)
+
 
 # Teste e Validação
 * Verificar sensores com leitura via Serial Monitor.
